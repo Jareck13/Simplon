@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Meteo</title>
+</head>
+<! -- <meta http-equiv="refresh" content="10000" commande de rechargement des données, les écrans d'info sont actualisé
+  regulierement avec un delai largement inferieur à 1heure + risque de refresh la page de la compagnie de transports -->
+
+  <body>
+    <div class="carte">
+      <div class="Meteo"></div>
+      <h1> </h1>
+      <h2 id="ville">  </h2>
+      <h1 id="temp"> </h1>
+      <div id="flex">
+        <img src="" id="icone"></img>
+        <div id="description"></div>
+        <div id="humidite"> </div>
+        <div id="vent"> </div>
+    <div>  </div>
+    
+  </body>
+  <script src="./script.js"></script>
+  <script>
+    setInterval(() => {
+      location.reload();
+    }, 600000);
+  </script>
+
+</html>
